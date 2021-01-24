@@ -24,7 +24,6 @@ header {
     display: inline;
     margin-left: 10px;
     margin-right: 22px;
-    word-spacing: 3px;
   }
   &__information span {
     color: #bababa;
@@ -48,16 +47,19 @@ header {
 }
 .logo {
   margin-top: 26px;
+   img{
+     width: 45%;
+   }
 }
 
 .setting {
   margin-top: 8px;
-  margin-left: 21px;
+  margin-left: 3%;
   color: #48b5d1;
 }
 .cart {
   margin-top: 5px;
-  margin-left: 21px;
+  margin-left: 3%;
   color: #48b5d1;
   &__number {
     text-align: center;
@@ -77,14 +79,12 @@ header {
   }
 }
 .search {
-  max-width: 556px;
-  width: 100%;
   height: 40px;
   border: solid 1px #dee2e6;
   border-radius: 20px;
 
   &__select {
-    width: 30%;
+    max-width: 150px;
     height: 24px;
     margin-top: 1.5%;
     padding-left: 20px;
@@ -94,21 +94,22 @@ header {
   }
   &__input {
     padding-left: 20px;
-    width: 70%;
+    max-width: 333px;
     height: 24px;
     margin-top: 8px;
   }
   &__input input {
     color: #999999;
-    width: 324px;
+    max-width: 324px;
     border: hidden;
   }
     // &__input input:focus-within {
     //   border: white;
     // }
   &__submit {
-    padding-top: 6px;
-    width: 10%;
+    // top: 50%;
+    // transform: translateY(-50%);
+    // max-width: 60px;
     text-align: center;
     background-color: #3399cc;
     color: white;
@@ -137,12 +138,13 @@ header {
 }
 
 .navbar-nav {
-  margin-left: 10px;
+  margin-left: 5%;
 }
 .nav-item {
   text-align: center;
   height: 100%;
-  width: 100px;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 .nav-link {
   font-size: 10pt;

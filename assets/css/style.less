@@ -1,177 +1,187 @@
 // #wrapper{
 //     // max-width: 1920px;
 // }
-@font-face{
-    font-family: 'poppins';
-    src: url('assets/fonts/Poppins/Poppins-Light.ttf');
+@font-face {
+  font-family: "poppins";
+  src: url("assets/fonts/Poppins/Poppins-Light.ttf");
 }
-.content{
-    max-width: 1140px;
-    width: 100%;
-    margin: 0 auto;
-    font-family: 'poppins';
-}   
-.row{
-    display: flex;
-    flex-wrap: wrap;
+*{
+    padding: 0;
+    margin: 0%;
+}
+// .container {
+//   max-width: 1140px;
+//   margin: 0 auto;
+//   font-family: "poppins";
+//   overflow: hidden;
+// }
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 /* slider  */
-.slider{
-        font-family: 'poppins';
-    &__button{
-        width: 60px;
-        height: 60px;
-        background-color: #fff;
-    }
-    &__text{
-        margin-left: 20%;
-        margin-top: 11%;
-        position: absolute;
-    }
-    &__text b{
-        font-size: 55pt;
-        line-height: 100px;
-    }
-    &__text b span{
-        color: #0099cc;
-    }
-    &__text p{
-        padding-top: 10px;
-        font-size: 16pt;
-        color: #999999;
-        padding-bottom: 30px;
-    }
-    &__text a{
-        color: black;
-        font-weight: bold;
-        font-size: 14pt;
-    
-    }
-    &__text a:hover{
-        text-decoration: none;
-        border-bottom: solid 1px #0099cc;
-        padding-bottom: 5px;
-        color: black;
-    }
-    &__button{
-        margin-top: 18%;
-        background-color: black;
-        width: 50px;
-        height: 50px;
-    }
+.slider {
+  font-family: "poppins";
+  &__button {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+  }
+  &__text {
+    max-width: 654px;
+    margin-left: 20%;
+    margin-top: 11%;
+    position: absolute;
+  }
+  &__text b {
+    font-size: 55pt;
+    line-height: 100px;
+  }
+  &__text b span {
+    color: #0099cc;
+  }
+  &__text p {
+    padding-top: 10px;
+    font-size: 16pt;
+    color: #999999;
+    padding-bottom: 30px;
+  }
+  &__text a {
+    color: black;
+    font-weight: bold;
+    font-size: 14pt;
+  }
+  &__text a:hover {
+    text-decoration: none;
+    border-bottom: solid 1px #0099cc;
+    padding-bottom: 5px;
+    color: black;
+  }
+  &__button {
+    margin-top: 18%;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 /* fact */
-.fact{
-    margin-top: 60px;
-    &__icon{
-        color:#0099cc;
-    }
-    &__text{
-        margin-left: 15px;
-    }
-    &__text span{
-        font-weight: bold;
-        font-size: 12pt;
-    }
-    &__text p{
-        font-size: 11pt;
-        color: #999999;
-    }
+.fact {
+  margin-top: 60px;
+  &__icon {
+    color: #0099cc;
+  }
+  &__text {
+    margin-left: 15px;
+  }
+  &__text span {
+    font-weight: bold;
+    font-size: 12pt;
+  }
+  &__text p {
+    font-size: 11pt;
+    color: #999999;
+  }
 }
 
 /* banner */
 @banner-background: #eee;
-.banner{
-    margin-top: 40px;
-    span{
-        color: #0099cc;
-    }
-    p{
-        color: #999999;
-    }
-    &__hotdeal{
-        background-color: @banner-background;
-        background: url('../images/banner/coconut.png') no-repeat scroll #eee;
-        background-size: 410px 365px;
-        background-position: center top 40px;
-        background-origin: content-box;
-        &-content{
-            padding-top: 59%;
-            line-height: 10px;
-            padding-bottom: 9%;
-            &-countdown{
-                margin: auto;
-                width: 265px;
-                margin-bottom: 30px;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-gap: 10px;
-                &-time{
-                    text-align: center;
-                    background-color: white;
-                    padding-top: 10px;
-                    line-height: 5px;
-                    b{  
-                        padding-top: 5px;
-                        color: #0099cc;
-                        font-size: 15pt;
-                    }
-                    p{
-                        margin-top: 15px;
-                        color: black;
-                        font-size: 9pt;
-                        font-weight: bold;
-                        
-                    }
-                }
-            }
-            &-title{
-                margin-top: -10px;
-            }
-        }
-    }
-    
-    &__1{
-        background-color: @banner-background;
-        width: 455px;
-        height: 240px;
-        background: url('../images/banner/pill.png') no-repeat scroll #eee;
-        background-size: 240px 240px;
-        background-position: right 30px top 3px;
-        background-origin: content-box;
-        &-content{
-            padding-top: 8%;
-            margin-left: 6%;
-            line-height: 10px;
-        }
-        h2{
-            font-size: 18pt;
-        }
-        span{
-            padding-left: 5px;
-            font-size: 45pt;
-        }
-        p{
+.banner {
+  margin-top: 40px;
+  span {
+    color: #0099cc;
+  }
+  p {
+    color: #999999;
+  }
+  a{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  &__hotdeal {
+    background-color: @banner-background;
+    background: url("../images/banner/coconut.png") no-repeat scroll #eee;
+    background-size:  60%;
+    background-position: center top ;
+    background-origin: content-box;
+    &-content {
+      padding-top: 47%;
+      line-height: 10px;
+      padding-bottom: 5%;
+      &-countdown {
+        margin: auto;
+        max-width: 266px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        &-time {
+          text-align: center;
+          background-color: white;
+          padding-top: 10px;
+          line-height: 5px;
+          b {
+            padding-top: 2%;
+            color: #0099cc;
             font-size: 15pt;
+          }
+          p {
+            margin-top: 15px;
+            color: black;
+            font-size: 9pt;
+            font-weight: bold;
+          }
         }
+      }
+      &-title {
+        margin-top: -10px;
+      }
     }
-    &__2{
-        background-color: @banner-background;
-        margin-top: 40px;
-        width: 455px;
-        height: 240px;
-        background: url('../images/banner/pill2.png') no-repeat scroll #eee;
-        background-size: 240px 220px;
-        background-position: right 10px top 5px;
-        background-origin: content-box;
-        &-content{
-            line-height: 10px;
-            padding-top: 18%;
-            margin-left: 6%;
-        }
-        p{
-            font-size: 14pt;
-        }
+  }
+
+  &__1 {
+    background-color: @banner-background;
+    background: url("../images/banner/pill.png") no-repeat scroll #eee;
+    background-size: 50%;
+    background-position: right 5% top;
+    background-origin: content-box;
+    &-content {
+      padding-top: 8%;
+      margin-left: 6%;
+      line-height: 10px;
+      padding-bottom: 8%;
     }
+    h2 {
+      font-size: 18pt;
+    }
+    span {
+      padding-left: 1%;
+      font-size: 45pt;
+    }
+    p {
+      font-size: 15pt;
+    }
+  }
+  &__2 {
+    background-color: @banner-background;
+    margin-top: 40px;
+    background: url("../images/banner/pill2.png") no-repeat scroll #eee;
+    background-size: 50%;
+    background-position: right 5% top 15%;
+    background-origin: content-box;
+    &-content {
+      line-height: 10px;
+      padding-top: 18%;
+      margin-left: 6%;
+      padding-bottom: 18%;
+    }
+    p {
+      font-size: 14pt;
+    }
+  }
 }
+// @media only screen and(max-width: 1199px){
+//     .navbar-nav .nav-link
+// }
+
