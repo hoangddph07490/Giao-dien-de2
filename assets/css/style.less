@@ -5,12 +5,16 @@
   font-family: "poppins";
   src: url("assets/fonts/Poppins/Poppins-Light.ttf");
 }
-.content {
-  max-width: 1140px;
-  width: 100%;
-  margin: 0 auto;
-  font-family: "poppins";
+*{
+    padding: 0;
+    margin: 0%;
 }
+// .container {
+//   max-width: 1140px;
+//   margin: 0 auto;
+//   font-family: "poppins";
+//   overflow: hidden;
+// }
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -24,6 +28,7 @@
     background-color: #fff;
   }
   &__text {
+    max-width: 654px;
     margin-left: 20%;
     margin-top: 11%;
     position: absolute;
@@ -89,6 +94,11 @@
   p {
     color: #999999;
   }
+  a{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
   &__hotdeal {
     background-color: @banner-background;
     background: url("../images/banner/coconut.png") no-repeat scroll #eee;
@@ -101,7 +111,7 @@
       padding-bottom: 5%;
       &-countdown {
         margin: auto;
-        width: 45%;
+        max-width: 266px;
         margin-bottom: 30px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -171,3 +181,7 @@
     }
   }
 }
+// @media only screen and(max-width: 1199px){
+//     .navbar-nav .nav-link
+// }
+
