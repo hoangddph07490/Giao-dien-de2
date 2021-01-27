@@ -3,18 +3,26 @@
 // }
 @font-face {
   font-family: "poppins";
-  src: url("assets/fonts/Poppins/Poppins-Light.ttf");
+  src: url("../../assets/fonts/Poppins/Poppins-Light.ttf");
+}
+body{
+   font-family: 'poppins';
 }
 *{
     padding: 0;
     margin: 0%;
 }
-// .container {
-//   max-width: 1140px;
-//   margin: 0 auto;
-//   font-family: "poppins";
-//   overflow: hidden;
-// }
+.container {
+  font-family: "poppins";
+}
+@media only screen and(min-width: 1200px){
+  .container {
+    max-width: 1170px;
+    font-family: "poppins";
+    // overflow: hidden;
+    margin: 0 auto;
+  }
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -22,13 +30,15 @@
 /* slider  */
 .slider {
   font-family: "poppins";
+  width: 100%;
+  position: relative;
   &__button {
     width: 60px;
     height: 60px;
     background-color: #fff;
   }
   &__text {
-    max-width: 654px;
+    max-width: 700px;
     margin-left: 20%;
     margin-top: 11%;
     position: absolute;
@@ -181,7 +191,64 @@
     }
   }
 }
-// @media only screen and(max-width: 1199px){
-//     .navbar-nav .nav-link
-// }
+@media only screen and(min-width: 576px){
+  .slider {
+    &__text b {
+      font-size: 15pt;
+      line-height: 30px;
+    }
+    &__text p {
+      font-size: 10pt;
+    }
+    &__text a {
+      font-size: 10pt;
+    }
+  }
+}
 
+@media only screen and(min-width: 768px){
+  .slider {
+    font-family: "poppins";
+    &__text b {
+      font-size: 15pt;
+      line-height: 50px;
+    }
+    &__text p {
+      font-size: 10pt;
+    }
+    &__text a {
+      font-size: 10pt;
+    }
+  }
+}
+
+@media only screen and(min-width: 992px){
+  .slider {
+    &__text b {
+      font-size: 35pt;
+      line-height: 70px;
+    }
+    &__text p {
+      font-size: 12pt;
+    }
+    &__text a {
+      font-size: 10pt;
+    }
+  }
+}
+@media only screen and(min-width: 1200px){
+  .slider {
+    &__text b {
+      font-size: 55pt;
+      line-height: 100px;
+    }
+    &__text p {
+      font-size: 16pt;
+    }
+    &__text a {
+      color: black;
+      font-weight: bold;
+      font-size: 14pt;
+    }
+  }
+}
