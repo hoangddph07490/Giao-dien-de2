@@ -5,20 +5,33 @@
   font-family: "poppins";
   src: url("../../assets/fonts/Poppins/Poppins-Light.ttf");
 }
-body{
-   font-family: 'poppins';
+@font-face {
+  font-family: poppins-medium;
+  src: url("../../assets/fonts/Poppins/Poppins-Medium.ttf");
 }
-*{
-    padding: 0;
-    margin: 0%;
+
+@font-face {
+  font-family: poppins-regular;
+  src: url("../../assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: poppins-semibold;
+  src: url("../../assets/fonts/Poppins/Poppins-Semibold.ttf");
+}
+body {
+  font-family: "poppins";
+}
+* {
+  padding: 0;
+  margin: 0%;
 }
 .container {
   font-family: "poppins";
 }
-@media only screen and(min-width: 1200px){
+@media only screen and(min-width: 1200px) {
   .container {
     max-width: 1170px;
-    font-family: "poppins";
     // overflow: hidden;
     margin: 0 auto;
   }
@@ -46,6 +59,7 @@ body{
   &__text b {
     font-size: 55pt;
     line-height: 100px;
+    font-family: poppins-medium;
   }
   &__text b span {
     color: #0099cc;
@@ -55,10 +69,11 @@ body{
     font-size: 16pt;
     color: #999999;
     padding-bottom: 30px;
+    font-family: 'poppins';
   }
   &__text a {
     color: black;
-    font-weight: bold;
+    font-family: poppins-semibold;
     font-size: 14pt;
   }
   &__text a:hover {
@@ -86,10 +101,12 @@ body{
   }
   &__text span {
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 11pt;
+    font-family: poppins-medium;
   }
   &__text p {
-    font-size: 11pt;
+    font-family: poppins-regular;
+    font-size: 10pt;
     color: #999999;
   }
 }
@@ -104,16 +121,16 @@ body{
   p {
     color: #999999;
   }
-  a{
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+  a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
   &__hotdeal {
     background-color: @banner-background;
     background: url("../images/banner/coconut.png") no-repeat scroll #eee;
-    background-size:  60%;
-    background-position: center top ;
+    background-size: 60%;
+    background-position: center top;
     background-origin: content-box;
     &-content {
       padding-top: 47%;
@@ -140,12 +157,19 @@ body{
             margin-top: 15px;
             color: black;
             font-size: 9pt;
-            font-weight: bold;
+            font-family: poppins-semibold;
           }
+          
         }
       }
       &-title {
         margin-top: -10px;
+      }
+      h2 {
+        font-family: poppins-semibold;
+      }
+      p {
+        font-family: poppins-regular;
       }
     }
   }
@@ -164,12 +188,14 @@ body{
     }
     h2 {
       font-size: 18pt;
+      font-family: poppins-semibold;
     }
     span {
       padding-left: 1%;
       font-size: 45pt;
     }
     p {
+      font-family: poppins-regular;
       font-size: 15pt;
     }
   }
@@ -186,12 +212,16 @@ body{
       margin-left: 6%;
       padding-bottom: 18%;
     }
+    h2 {
+      font-family: poppins-semibold;
+    }
     p {
       font-size: 14pt;
+      font-family: poppins-regular;
     }
   }
 }
-@media only screen and(min-width: 576px){
+@media only screen and(min-width: 576px) {
   .slider {
     &__text b {
       font-size: 15pt;
@@ -206,7 +236,7 @@ body{
   }
 }
 
-@media only screen and(min-width: 768px){
+@media only screen and(min-width: 768px) {
   .slider {
     font-family: "poppins";
     &__text b {
@@ -222,7 +252,7 @@ body{
   }
 }
 
-@media only screen and(min-width: 992px){
+@media only screen and(min-width: 992px) {
   .slider {
     &__text b {
       font-size: 35pt;
@@ -236,7 +266,7 @@ body{
     }
   }
 }
-@media only screen and(min-width: 1200px){
+@media only screen and(min-width: 1200px) {
   .slider {
     &__text b {
       font-size: 55pt;
